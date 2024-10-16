@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class OrderPageLocators:
-    # Локаторы для полей формы заказа
+    # Локаторы формы заказа
     NAME_INPUT = By.XPATH, '//*[@placeholder="* Имя"]'
     SURNAME_INPUT = By.XPATH, '//*[@placeholder="* Фамилия"]'
     ADDRESS_INPUT = By.XPATH, '//*[@placeholder="* Адрес: куда привезти заказ"]'
