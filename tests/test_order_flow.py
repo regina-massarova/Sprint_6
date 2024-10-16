@@ -17,13 +17,13 @@ class TestOrderFlow:
         order_page = OrderPage(driver)
         main_page.click_cookie_button()
 
-        # Словарь для выбора метода клика по кнопке
+        
         button_click_methods = {
             "top": main_page.click_order_button_top,
             "bottom": main_page.click_order_button_bottom,
         }
 
-        # Вызываем соответствующий метод на основе button_position
+        
         button_click_methods[button_position]()
 
         order_page.fill_order_form(
